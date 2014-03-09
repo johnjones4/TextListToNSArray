@@ -14,21 +14,8 @@
 		AF3BAFF918CCB5D900EEA6DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3BAFF818CCB5D900EEA6DE /* AppDelegate.m */; };
 		AF3BAFFC18CCB5D900EEA6DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3BAFFA18CCB5D900EEA6DE /* MainMenu.xib */; };
 		AF3BAFFE18CCB5D900EEA6DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3BAFFD18CCB5D900EEA6DE /* Images.xcassets */; };
-		AF3BB00518CCB5D900EEA6DE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3BB00418CCB5D900EEA6DE /* XCTest.framework */; };
-		AF3BB00618CCB5D900EEA6DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3BAFE518CCB5D900EEA6DE /* Cocoa.framework */; };
-		AF3BB00E18CCB5D900EEA6DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF3BB00C18CCB5D900EEA6DE /* InfoPlist.strings */; };
-		AF3BB01018CCB5D900EEA6DE /* TextListToNSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3BB00F18CCB5D900EEA6DE /* TextListToNSArrayTests.m */; };
+		AF3BB01B18CCBA8900EEA6DE /* StringToArrayListConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3BB01A18CCBA8900EEA6DE /* StringToArrayListConverter.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AF3BB00718CCB5D900EEA6DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF3BAFDA18CCB5D900EEA6DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF3BAFE118CCB5D900EEA6DE;
-			remoteInfo = TextListToNSArray;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF3BAFE218CCB5D900EEA6DE /* TextListToNSArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextListToNSArray.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,11 +32,9 @@
 		AF3BAFF818CCB5D900EEA6DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF3BAFFB18CCB5D900EEA6DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AF3BAFFD18CCB5D900EEA6DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AF3BB00318CCB5D900EEA6DE /* TextListToNSArrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextListToNSArrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3BB00418CCB5D900EEA6DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AF3BB00B18CCB5D900EEA6DE /* TextListToNSArrayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextListToNSArrayTests-Info.plist"; sourceTree = "<group>"; };
-		AF3BB00D18CCB5D900EEA6DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF3BB00F18CCB5D900EEA6DE /* TextListToNSArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextListToNSArrayTests.m; sourceTree = "<group>"; };
+		AF3BB01918CCBA8900EEA6DE /* StringToArrayListConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringToArrayListConverter.h; sourceTree = "<group>"; };
+		AF3BB01A18CCBA8900EEA6DE /* StringToArrayListConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringToArrayListConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +46,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF3BB00018CCB5D900EEA6DE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF3BB00618CCB5D900EEA6DE /* Cocoa.framework in Frameworks */,
-				AF3BB00518CCB5D900EEA6DE /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				AF3BAFEB18CCB5D900EEA6DE /* TextListToNSArray */,
-				AF3BB00918CCB5D900EEA6DE /* TextListToNSArrayTests */,
 				AF3BAFE418CCB5D900EEA6DE /* Frameworks */,
 				AF3BAFE318CCB5D900EEA6DE /* Products */,
 			);
@@ -87,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				AF3BAFE218CCB5D900EEA6DE /* TextListToNSArray.app */,
-				AF3BB00318CCB5D900EEA6DE /* TextListToNSArrayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +91,8 @@
 			children = (
 				AF3BAFF718CCB5D900EEA6DE /* AppDelegate.h */,
 				AF3BAFF818CCB5D900EEA6DE /* AppDelegate.m */,
+				AF3BB01918CCBA8900EEA6DE /* StringToArrayListConverter.h */,
+				AF3BB01A18CCBA8900EEA6DE /* StringToArrayListConverter.m */,
 				AF3BAFFA18CCB5D900EEA6DE /* MainMenu.xib */,
 				AF3BAFFD18CCB5D900EEA6DE /* Images.xcassets */,
 				AF3BAFEC18CCB5D900EEA6DE /* Supporting Files */,
@@ -132,24 +108,6 @@
 				AF3BAFF118CCB5D900EEA6DE /* main.m */,
 				AF3BAFF318CCB5D900EEA6DE /* TextListToNSArray-Prefix.pch */,
 				AF3BAFF418CCB5D900EEA6DE /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AF3BB00918CCB5D900EEA6DE /* TextListToNSArrayTests */ = {
-			isa = PBXGroup;
-			children = (
-				AF3BB00F18CCB5D900EEA6DE /* TextListToNSArrayTests.m */,
-				AF3BB00A18CCB5D900EEA6DE /* Supporting Files */,
-			);
-			path = TextListToNSArrayTests;
-			sourceTree = "<group>";
-		};
-		AF3BB00A18CCB5D900EEA6DE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF3BB00B18CCB5D900EEA6DE /* TextListToNSArrayTests-Info.plist */,
-				AF3BB00C18CCB5D900EEA6DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,24 +132,6 @@
 			productReference = AF3BAFE218CCB5D900EEA6DE /* TextListToNSArray.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF3BB00218CCB5D900EEA6DE /* TextListToNSArrayTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF3BB01618CCB5D900EEA6DE /* Build configuration list for PBXNativeTarget "TextListToNSArrayTests" */;
-			buildPhases = (
-				AF3BAFFF18CCB5D900EEA6DE /* Sources */,
-				AF3BB00018CCB5D900EEA6DE /* Frameworks */,
-				AF3BB00118CCB5D900EEA6DE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF3BB00818CCB5D900EEA6DE /* PBXTargetDependency */,
-			);
-			name = TextListToNSArrayTests;
-			productName = TextListToNSArrayTests;
-			productReference = AF3BB00318CCB5D900EEA6DE /* TextListToNSArrayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,11 +140,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Phoenix4 LLC";
-				TargetAttributes = {
-					AF3BB00218CCB5D900EEA6DE = {
-						TestTargetID = AF3BAFE118CCB5D900EEA6DE;
-					};
-				};
 			};
 			buildConfigurationList = AF3BAFDD18CCB5D900EEA6DE /* Build configuration list for PBXProject "TextListToNSArray" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				AF3BAFE118CCB5D900EEA6DE /* TextListToNSArray */,
-				AF3BB00218CCB5D900EEA6DE /* TextListToNSArrayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,14 +171,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF3BB00118CCB5D900EEA6DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF3BB00E18CCB5D900EEA6DE /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,28 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3BB01B18CCBA8900EEA6DE /* StringToArrayListConverter.m in Sources */,
 				AF3BAFF918CCB5D900EEA6DE /* AppDelegate.m in Sources */,
 				AF3BAFF218CCB5D900EEA6DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF3BAFFF18CCB5D900EEA6DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF3BB01018CCB5D900EEA6DE /* TextListToNSArrayTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AF3BB00818CCB5D900EEA6DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF3BAFE118CCB5D900EEA6DE /* TextListToNSArray */;
-			targetProxy = AF3BB00718CCB5D900EEA6DE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF3BAFEE18CCB5D900EEA6DE /* InfoPlist.strings */ = {
@@ -298,14 +209,6 @@
 				AF3BAFFB18CCB5D900EEA6DE /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		AF3BB00C18CCB5D900EEA6DE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF3BB00D18CCB5D900EEA6DE /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -405,46 +308,6 @@
 			};
 			name = Release;
 		};
-		AF3BB01718CCB5D900EEA6DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TextListToNSArray.app/Contents/MacOS/TextListToNSArray";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TextListToNSArray/TextListToNSArray-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TextListToNSArrayTests/TextListToNSArrayTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AF3BB01818CCB5D900EEA6DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TextListToNSArray.app/Contents/MacOS/TextListToNSArray";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TextListToNSArray/TextListToNSArray-Prefix.pch";
-				INFOPLIST_FILE = "TextListToNSArrayTests/TextListToNSArrayTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,14 +327,7 @@
 				AF3BB01518CCB5D900EEA6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		AF3BB01618CCB5D900EEA6DE /* Build configuration list for PBXNativeTarget "TextListToNSArrayTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF3BB01718CCB5D900EEA6DE /* Debug */,
-				AF3BB01818CCB5D900EEA6DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

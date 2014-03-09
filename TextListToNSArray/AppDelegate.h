@@ -7,9 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "StringToArrayListConverter.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,StringToArrayListConverterDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *inputPathTextField;
+@property (weak) IBOutlet NSTextField *outputPathTextField;
+@property (weak) IBOutlet NSProgressIndicator *progressBar;
+
+- (IBAction)inputBrowseButtonSelected:(id)sender;
+- (IBAction)outputBrowseButtonSelected:(id)sender;
+- (IBAction)startButtonSelected:(id)sender;
 
 @end
